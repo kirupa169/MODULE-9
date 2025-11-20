@@ -18,8 +18,27 @@ To write a Python program that prints only the diagonal elements of a given matr
 6. Print a newline after each row.
 
 ## 🖥️ Program
-Add Code Here
+```
+rows = int(input())
+columns = int(input())
+matrix = [[0]*columns for row in range(rows)]
+for i in range(rows):
+lines = list(map(int, input().split()))
+for j in range(columns):
+matrix[i][j] = lines[j]
+print(matrix)
+for i in range(rows):
+for j in range(columns):
+if(i==j):
+print(matrix[i][j],end=" ")
+else:
+print(' ',end=" ")
+print()
+```
 
 ### Output:
+<img width="819" height="348" alt="image" src="https://github.com/user-attachments/assets/6a9d7ff3-2dd0-40be-9cdc-7b40fac61fb3" />
+
 
 ## Result
+Thus the program has been successfully executed
